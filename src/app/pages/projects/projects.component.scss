@@ -12,7 +12,12 @@ h2 {
 }
 
 .cardList {
-  display: flex;
+  @media(max-width: 860px) {
+    display: block;
+  }
+  @media(min-width: 860px) {
+    display: flex;
+  }
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
