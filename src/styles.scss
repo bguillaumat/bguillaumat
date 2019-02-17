@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@import "~@fortawesome/fontawesome-free/css/fontawesome.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@include mat-core();
+
+$primary: mat-palette($mat-purple, 600);
+$accent: mat-palette($mat-green, 800);
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:visited {
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+}
