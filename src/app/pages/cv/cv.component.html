@@ -9,73 +9,29 @@
   <div class="left part">
     <h3>Languages</h3>
 
-    <div class="competencies">
-      <p>C</p>
-      <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>C++</p>
-      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>TypeScript</p>
-      <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>JavaScript</p>
-      <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>Java (Android)</p>
-      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>PHP</p>
-      <mat-progress-bar mode="determinate" value="65"></mat-progress-bar>
+    <div class="competencies" *ngFor="let language of languages">
+      <p>{{language.name}}</p>
+      <mat-progress-bar mode="determinate" value="{{language.percentage}}"></mat-progress-bar>
     </div>
 
   </div>
   <div class="right part">
     <h3>Frameworks</h3>
 
-    <div class="competencies">
-      <p>AngularJs</p>
-      <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>Ionic</p>
-      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+    <div class="competencies" *ngFor="let framework of frameworks">
+      <p>{{framework.name}}</p>
+      <mat-progress-bar mode="determinate" value="{{framework.percentage}}"></mat-progress-bar>
     </div>
 
     <br>
 
     <h3>Others</h3>
 
-    <div class="competencies">
-      <p>Linux (Ubuntu & Debian)</p>
-      <mat-progress-bar mode="determinate" value="85"></mat-progress-bar>
+    <div class="competencies" *ngFor="let other of others">
+      <p>{{other.name}}</p>
+      <mat-progress-bar mode="determinate" value="{{other.percentage}}"></mat-progress-bar>
     </div>
 
-    <div class="competencies">
-      <p>GIT</p>
-      <mat-progress-bar mode="determinate" value="90"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>Firebase</p>
-      <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
-    </div>
-
-    <div class="competencies">
-      <p>Apache</p>
-      <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
-    </div>
   </div>
 
 </div>
@@ -92,7 +48,7 @@
           <span class="time-wrapper"><span class="time">October 2018 - March 2019</span></span>
         </div>
         <div class="desc">
-          Fullstack Developer
+          Fullstack Developer<br>Angular JS / Drupal
         </div>
       </div>
     </li>
@@ -105,7 +61,7 @@
           <span class="time-wrapper"><span class="time">July 2017 - December 2017</span></span>
         </div>
         <div class="desc">
-          Fullstack Developer
+          Fullstack Developer<br>PHP / HTML / CSS
         </div>
       </div>
     </li>

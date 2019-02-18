@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-cv',
@@ -7,7 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
-  constructor() { }
+  languages = [];
+  frameworks = [];
+  others = [];
+
+  constructor() {
+    this.languages.push({name: 'C', percentage: 80});
+    this.languages.push({name: 'C++', percentage: 70});
+    this.languages.push({name: 'TypeScript', percentage: 90});
+    this.languages.push({name: 'JavaScript', percentage: 85});
+    this.languages.push({name: 'Java (Android)', percentage: 70});
+    this.languages.push({name: 'PHP', percentage: 65});
+
+    this.frameworks.push({name: 'AngularJS', percentage: 80});
+    this.frameworks.push({name: 'Ionic', percentage: 70});
+
+    this.others.push({name: 'Linux (Ubuntu & Debian)', percentage: 85});
+    this.others.push({name: 'GIT', percentage: 90});
+    this.others.push({name: 'Firebase', percentage: 70});
+    this.others.push({name: 'Apache', percentage: 60});
+  }
 
   ngOnInit() {
   }

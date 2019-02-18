@@ -6,63 +6,22 @@
 
 <div cdkDropList cdkDropListOrientation="horizontal" class="cardList" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
 
-  <mat-card class="cardListItem m-3">
+  <mat-card class="cardListItem m-3" *ngFor="let project of projects">
     <mat-card-header>
-      <mat-card-title class="project-name">Epicture</mat-card-title>
-      <mat-card-subtitle class="project-year">2018</mat-card-subtitle>
+      <mat-card-title class="project-name">{{project.name}}</mat-card-title>
+      <mat-card-subtitle class="project-year">{{project.year}}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content class="project-content">
       <p>
-        Epicture is a non-official Imgur Application on Android
+        {{project.content}}
       </p>
-      <a href="https://github.com/bguillaumat/Epicture" target="_blank">
+      <a href="https://github.com/bguillaumat/{{project.github}}" target="_blank">
         <i class="fab fa-github"> Dépôt Github</i>
       </a>
     </mat-card-content>
     <mat-card-footer class="project-languages">
       <p>
-        <i class="java">Java</i>
-      </p>
-    </mat-card-footer>
-  </mat-card>
-
-  <mat-card class="cardListItem m-3">
-    <mat-card-header>
-      <mat-card-title class="project-name">Babel</mat-card-title>
-      <mat-card-subtitle class="project-year">2018</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content class="project-content">
-      <p>
-        Babel is a project who consists in a client/server architecture voice over IP application, similar to TeamSpeak
-      </p>
-      <a href="https://github.com/bguillaumat/Babel" target="_blank">
-        <i class="fab fa-github"> Dépôt Github</i>
-      </a>
-    </mat-card-content>
-    <mat-card-footer class="project-languages">
-      <p>
-        <i class="cpp">C++</i>
-      </p>
-    </mat-card-footer>
-  </mat-card>
-
-  <mat-card class="cardListItem m-3">
-    <mat-card-header>
-      <mat-card-title class="project-name">Dashboard</mat-card-title>
-      <mat-card-subtitle class="project-year">2018</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content class="project-content">
-      <p>
-        A web app in NodeJs displaying widgets of services
-      </p>
-      <a href="https://github.com/bguillaumat/Dashboard" target="_blank">
-        <i class="fab fa-github"> Dépôt Github</i>
-      </a>
-    </mat-card-content>
-    <mat-card-footer class="project-languages">
-      <p>
-        <i class="html">HTML</i>
-        <i class="javascript">JavaScript</i>
+        <i *ngFor="let language of project.languages" class="{{language.css}}">{{language.name}}</i>
       </p>
     </mat-card-footer>
   </mat-card>

@@ -3,11 +3,11 @@
 
 <mat-sidenav-container class="side-nav-component">
 
-  <mat-sidenav mode="side" [(opened)]="opened" style="background-color: #fff">
+  <mat-sidenav mode="side" [(opened)]="opened" [disableClose]="true" style="background-color: #fff">
 
     <div id="main" routerLink="" routerLinkActive="active">
 
-      <img src="../assets/IMG_20180413_163752.jpg" alt="me">
+      <img src="../assets/itsme.jpg" alt="me">
 
       <h2 id="me" style="padding-left: 5rem; padding-right: 5rem">Bastien Guillaumat</h2>
 
@@ -44,6 +44,7 @@
       <i class="fas fa-envelope fa-2x"></i>
     </a>
 
+    <h5 id="copyright">© Bastien Guillaumat</h5>
   </mat-sidenav>
 
   <mat-sidenav-content>

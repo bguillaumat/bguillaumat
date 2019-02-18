@@ -16,6 +16,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule,
     MatProgressBarModule,
     MatGridListModule,
+    MatChipsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

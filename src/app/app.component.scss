@@ -31,6 +31,14 @@ a, a:hover, a:visited {
   box-shadow: none!important;
 }
 
+#copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #b4b4b4;
+}
+
 .block {
   color: black;
   outline: 0;
