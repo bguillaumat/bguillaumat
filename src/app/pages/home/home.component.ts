@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.yo = this.year - this.yo;
-    if (this.month <= 2 && this.day <= 26) {
+    if (this.month <= 2 && this.day < 26) {
       this.yo -= 1;
     }
   }
