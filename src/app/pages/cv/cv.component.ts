@@ -22,6 +22,7 @@ export class CvComponent implements OnInit {
     this.frameworks.push({name: 'AngularJS', percentage: 80});
     this.frameworks.push({name: 'Ionic', percentage: 70});
 
+    this.others.push({name: 'English', percentage: 70, details: 'TOEFL IBT 74'});
     this.others.push({name: 'Linux (Ubuntu & Debian)', percentage: 85});
     this.others.push({name: 'GIT', percentage: 90});
     this.others.push({name: 'Firebase', percentage: 70});

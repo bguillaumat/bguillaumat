@@ -28,7 +28,10 @@
     <h3>Others</h3>
 
     <div class="competencies" *ngFor="let other of others">
-      <p>{{other.name}}</p>
+      <div style="display: flex; justify-content: space-between">
+        <p>{{other.name}}</p>
+        <p>{{other.details}}</p>
+      </div>
       <mat-progress-bar mode="determinate" value="{{other.percentage}}"></mat-progress-bar>
     </div>
 
