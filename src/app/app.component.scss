@@ -21,6 +21,10 @@ a, a:hover, a:visited {
   color:inherit;
 }
 
+#main:hover {
+  cursor: pointer;
+}
+
 #main {
   outline: 0;
   box-shadow: none!important;
@@ -37,6 +41,10 @@ a, a:hover, a:visited {
   left: 0;
   right: 0;
   color: #b4b4b4;
+}
+
+.block:hover {
+  cursor: pointer;
 }
 
 .block {
