@@ -10,6 +10,8 @@ export class CvComponent implements OnInit {
   languages = [];
   frameworks = [];
   others = [];
+  experience = [];
+  education = [];
 
   constructor() {
     this.languages.push({name: 'C', percentage: 80});
@@ -27,6 +29,34 @@ export class CvComponent implements OnInit {
     this.others.push({name: 'GIT', percentage: 90});
     this.others.push({name: 'Firebase', percentage: 70});
     this.others.push({name: 'Apache', percentage: 60});
+
+    this.experience.push({
+      company: 'Carbon4Finance',
+      time: 'October 2018 - June 2019',
+      job: 'Fullstack Developer',
+      techs: 'Angular / Drupal',
+      pos: 'r'
+    });
+    this.experience.push({
+      company: 'DigiFactory',
+      time: 'July 2017 - December 2017',
+      job: 'Fullstack Developer',
+      techs: 'PHP / HTML / CSS',
+      pos: 'l'
+    });
+
+    this.education.push({
+      diploma: 'Epitech Graduate Diploma in IT',
+      time: '2016 - Present (to 2021)',
+      place: 'EPITECH Paris',
+      pos: 'r'
+    });
+    this.education.push({
+      diploma: 'A-Level with specialization in Sciences',
+      time: '2016',
+      place: 'Lycée Hoche, Versailles',
+      pos: 'l'
+    });
   }
 
   ngOnInit() {
