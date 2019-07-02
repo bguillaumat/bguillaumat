@@ -19,9 +19,9 @@ export class CvComponent implements OnInit {
     this.languages.push({name: 'TypeScript', percentage: 90});
     this.languages.push({name: 'JavaScript', percentage: 85});
     this.languages.push({name: 'Java (Android)', percentage: 70});
-    this.languages.push({name: 'PHP', percentage: 65});
+    this.languages.push({name: 'PHP', percentage: 70});
 
-    this.frameworks.push({name: 'AngularJS', percentage: 80});
+    this.frameworks.push({name: 'Angular', percentage: 80});
     this.frameworks.push({name: 'Ionic', percentage: 70});
 
     this.others.push({name: 'English', percentage: 70, details: 'TOEFL IBT 74'});
@@ -29,6 +29,7 @@ export class CvComponent implements OnInit {
     this.others.push({name: 'GIT', percentage: 90});
     this.others.push({name: 'Firebase', percentage: 70});
     this.others.push({name: 'Apache', percentage: 60});
+    this.others.push({name: 'Drupal', percentage: 60});
 
     this.experience.push({
       company: 'Carbon4Finance',
@@ -45,6 +46,12 @@ export class CvComponent implements OnInit {
       pos: 'l'
     });
 
+    this.education.push({
+      diploma: 'Study Abroad at RMIT',
+      time: 'July 2019 - June 2020',
+      place: 'Royal Melbourne Institute of Technology, Australia',
+      pos: 'l'
+    });
     this.education.push({
       diploma: 'Epitech Graduate Diploma in IT',
       time: '2016 - Present (to 2021)',
