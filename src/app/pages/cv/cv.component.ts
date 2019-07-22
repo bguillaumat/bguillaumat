@@ -47,14 +47,20 @@ export class CvComponent implements OnInit {
     });
 
     this.education.push({
+      diploma: 'Master\'s degree in IT',
+      time: '2016 - Present (to 2021)',
+      place: 'EPITECH Paris',
+      pos: 'r'
+    });
+    this.education.push({
       diploma: 'Study Abroad at RMIT',
       time: 'July 2019 - June 2020',
       place: 'Royal Melbourne Institute of Technology, Australia',
       pos: 'l'
     });
     this.education.push({
-      diploma: 'Epitech Graduate Diploma in IT',
-      time: '2016 - Present (to 2021)',
+      diploma: 'Bachelor\'s degree in IT',
+      time: '2016 - 2019',
       place: 'EPITECH Paris',
       pos: 'r'
     });
