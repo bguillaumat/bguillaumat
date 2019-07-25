@@ -18,6 +18,7 @@ export class CvComponent implements OnInit {
     this.languages.push({name: 'C++', percentage: 70});
     this.languages.push({name: 'TypeScript', percentage: 90});
     this.languages.push({name: 'JavaScript', percentage: 85});
+    this.languages.push({name: 'NodeJS', percentage: 80});
     this.languages.push({name: 'Java (Android)', percentage: 70});
     this.languages.push({name: 'PHP', percentage: 70});
 

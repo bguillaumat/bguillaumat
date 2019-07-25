@@ -25,6 +25,13 @@ export class ProjectsComponent implements OnInit {
       languages: [{name: 'C++', css: 'cpp'}]
     });
     this.projects.push({
+      name: 'KytKat',
+      year: '2018',
+      content: 'KytKat is a Multiple Choice Answers',
+      github: 'KytKat',
+      languages: [{name: 'Java', css: 'java'}]
+    });
+    this.projects.push({
       name: 'Dashboard',
       year: '2018',
       content: 'A web app in NodeJs displaying widgets of services',
