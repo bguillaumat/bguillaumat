@@ -20,4 +20,10 @@ export class AppComponent {
     this.isMobile = (window.innerWidth < 900);
     this.opened = !this.isMobile;
   }
+
+  openClose() {
+    if (this.isMobile) {
+      this.opened = !this.opened;
+    }
+  }
 }

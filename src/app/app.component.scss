@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #f8f9fa;
+  background: #e6e6e6;
   text-align: center;
 }
 img {
@@ -40,7 +40,7 @@ a, a:hover, a:visited {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #b4b4b4;
+  color: #4d4d4d;
 }
 
 .block:hover {
@@ -53,6 +53,6 @@ a, a:hover, a:visited {
 }
 
 .block.active {
-  background-color: #fcfcfc;
+  background-color: #e6e6e6;
   box-shadow: inset -10px 0 0 -6px #1E457C;
 }

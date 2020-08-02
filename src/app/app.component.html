@@ -1,11 +1,8 @@
-<!--<header>
-</header>-->
-
 <mat-sidenav-container class="side-nav-component">
 
-  <mat-sidenav mode="side" [(opened)]="opened" [disableClose]="true" style="background-color: #fff">
+  <mat-sidenav mode="side" [(opened)]="opened" [disableClose]="true" style="background-color: #cccccc" >
 
-    <div id="main" routerLink="" routerLinkActive="active">
+    <div id="main" routerLink="" routerLinkActive="active" (click)="openClose()">
 
       <img src="../assets/itsme.jpg" alt="me">
 
@@ -13,23 +10,23 @@
 
     </div>
 
-    <mat-list>
+    <mat-nav-list>
 
       <mat-divider></mat-divider>
 
-      <mat-list-item class="block" routerLink="cv" routerLinkActive="active">
+      <mat-list-item class="block" routerLink="cv" routerLinkActive="active" (click)="openClose()">
         <h4 mat-line>Curriculum Vitae</h4>
       </mat-list-item>
 
       <mat-divider></mat-divider>
 
-      <mat-list-item class="block" routerLink="projects" routerLinkActive="active">
+      <mat-list-item class="block" routerLink="projects" routerLinkActive="active" (click)="openClose()">
         <h4 mat-line>Projects</h4>
       </mat-list-item>
 
       <mat-divider></mat-divider>
 
-    </mat-list>
+    </mat-nav-list>
 
     <br>
     <br>
@@ -48,6 +45,14 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
+    <!--<div style="display: flex;justify-content: space-around; background-color: #ffffff">
+      <a routerLink="" routerLinkActive="active">HOME</a>
+      <a routerLink="cv" routerLinkActive="active">CV</a>
+      <a routerLink="projects" routerLinkActive="active">Project</a>
+    </div>-->
+    <div *ngIf="isMobile" style="background-color: #cccccc">
+      <i class="fas fa-bars" (click)="openClose()"></i>
+    </div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 
