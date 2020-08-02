@@ -27,7 +27,7 @@ export class ProjectsComponent implements OnInit {
     this.projects.push({
       name: 'KytKat',
       year: '2018',
-      content: 'KytKat is a Multiple Choice Answers',
+      content: 'KytKat is a Multiple Choice Answers application on Android',
       github: 'KytKat',
       languages: [{name: 'Java', css: 'java'}]
     });

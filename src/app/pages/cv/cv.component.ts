@@ -8,21 +8,23 @@ import {Component, OnInit} from '@angular/core';
 export class CvComponent implements OnInit {
 
   languages = [];
+  skills = [];
   frameworks = [];
   others = [];
   experience = [];
   education = [];
 
   constructor() {
-    this.languages.push({name: 'C', percentage: 80});
-    this.languages.push({name: 'C++', percentage: 70});
+    this.languages.push({name: 'C', percentage: 85});
+    this.languages.push({name: 'C++', percentage: 85});
     this.languages.push({name: 'TypeScript', percentage: 90});
     this.languages.push({name: 'JavaScript', percentage: 85});
-    this.languages.push({name: 'NodeJS', percentage: 80});
-    this.languages.push({name: 'Java (Android)', percentage: 70});
+    this.languages.push({name: 'Java', percentage: 80});
     this.languages.push({name: 'PHP', percentage: 70});
 
+    this.frameworks.push({name: 'NodeJS', percentage: 80});
     this.frameworks.push({name: 'Angular', percentage: 80});
+    this.frameworks.push({name: 'Vue', percentage: 80});
     this.frameworks.push({name: 'Ionic', percentage: 70});
 
     this.others.push({name: 'English', percentage: 70, details: 'TOEFL IBT 74'});
@@ -31,7 +33,20 @@ export class CvComponent implements OnInit {
     this.others.push({name: 'Firebase', percentage: 70});
     this.others.push({name: 'Apache', percentage: 60});
     this.others.push({name: 'Drupal', percentage: 60});
+    this.others.push({name: 'OpenEmbedded', percentage: 60});
+    this.others.push({name: 'MySQL', percentage: 75});
 
+    this.skills.push({name: 'Project Management', percentage: 85});
+    this.skills.push({name: 'Backend Dev', percentage: 85});
+    this.skills.push({name: 'Frontend Dev', percentage: 70});
+
+    this.experience.push({
+      company: 'KIPLINK',
+      time: 'February 2020 - (Now)',
+      job: 'Lead Software Engineer',
+      techs: 'C++ / Vue / MySQL / OpenEmbedded',
+      pos: 'l'
+    });
     this.experience.push({
       company: 'Carbon4Finance',
       time: 'October 2018 - June 2019',

@@ -4,7 +4,7 @@
   </h2>
 </div>
 
-<div cdkDropList cdkDropListOrientation="horizontal" class="cardList" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+<div class="cardList" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
 
   <mat-card class="cardListItem m-3" *ngFor="let project of projects">
     <mat-card-header>
@@ -16,7 +16,7 @@
         {{project.content}}
       </p>
       <a href="https://github.com/bguillaumat/{{project.github}}" target="_blank">
-        <i class="fab fa-github"> Dépôt Github</i>
+        <i class="fab fa-github"> Github Repository</i>
       </a>
     </mat-card-content>
     <mat-card-footer class="project-languages">
