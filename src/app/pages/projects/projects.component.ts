@@ -11,6 +11,13 @@ export class ProjectsComponent implements OnInit {
 
   constructor() {
     this.projects.push({
+      name: 'Wav Header Parser',
+      year: '2020',
+      content: 'NPM module made for parse WAV files header',
+      github: 'Wav-Header-Parser-JS',
+      languages: [{name: 'TypeScript', css: 'ts'}]
+    });
+    this.projects.push({
       name: 'Epicture',
       year: '2018',
       content: 'Epicture is a non-official Imgur Application on Android',
