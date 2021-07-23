@@ -15,7 +15,7 @@
       <p>
         {{project.content}}
       </p>
-      <a href="https://github.com/bguillaumat/{{project.github}}" target="_blank">
+      <a *ngIf="project.github" href="https://github.com/bguillaumat/{{project.github}}" target="_blank">
         <i class="fab fa-github"> Github Repository</i>
       </a>
     </mat-card-content>
