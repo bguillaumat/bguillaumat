@@ -21,10 +21,12 @@ export class CvComponent implements OnInit {
     this.languages.push({name: 'JavaScript', percentage: 85});
     this.languages.push({name: 'Java', percentage: 80});
     this.languages.push({name: 'PHP', percentage: 70});
+    this.languages.push({name: 'Rust', percentage: 50});
 
     this.frameworks.push({name: 'NodeJS', percentage: 80});
     this.frameworks.push({name: 'Angular', percentage: 80});
     this.frameworks.push({name: 'Vue', percentage: 80});
+    this.frameworks.push({name: 'React', percentage: 70});
     this.frameworks.push({name: 'Ionic', percentage: 70});
 
     this.others.push({name: 'English', percentage: 70, details: 'TOEFL IBT 74'});
@@ -41,8 +43,15 @@ export class CvComponent implements OnInit {
     this.skills.push({name: 'Frontend Dev', percentage: 70});
 
     this.experience.push({
+      company: 'SQUADS',
+      time: 'October 2021 - (Now)',
+      job: 'Fullstack/Blockchain Developer',
+      techs: 'Rust / React',
+      pos: 'r'
+    });
+    this.experience.push({
       company: 'KIPLINK',
-      time: 'February 2020 - (Now)',
+      time: 'February 2020 - October 2021',
       job: 'Lead Software Engineer',
       techs: 'C++ / Vue / MySQL / OpenEmbedded',
       pos: 'l'
