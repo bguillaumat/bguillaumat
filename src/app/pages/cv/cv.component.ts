@@ -47,6 +47,7 @@ export class CvComponent implements OnInit {
       time: 'October 2021 - (Now)',
       job: 'Fullstack/Blockchain Developer',
       techs: 'Rust / React',
+      site: 'https://sqds.io',
       pos: 'r'
     });
     this.experience.push({
@@ -73,7 +74,7 @@ export class CvComponent implements OnInit {
 
     this.education.push({
       diploma: 'Master\'s degree in IT',
-      time: '2016 - Present (to 2021)',
+      time: '2016 - 2021',
       place: 'EPITECH Paris',
       pos: 'r'
     });

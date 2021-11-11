@@ -61,7 +61,7 @@
           <span class="time-wrapper"><span class="time">{{exp.time}}</span></span>
         </div>
         <div class="desc">
-          {{exp.job}}<br>{{exp.techs}}
+          <a *ngIf="exp.site" href="{{exp.site}}" target="_blank">{{exp.site}}<br/></a>{{exp.job}}<br>{{exp.techs}}
         </div>
       </div>
     </li>
