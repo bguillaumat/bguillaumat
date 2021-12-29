@@ -1,4 +1,4 @@
-### Hi there 👋
+## Hi there 👋
 
 I'm a software engineer/developer being gratuated from EPITECH Paris with a Master Degree in IT.
 
