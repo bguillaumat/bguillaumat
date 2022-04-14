@@ -10,12 +10,6 @@ export class ProjectsComponent implements OnInit {
   projects = [];
 
   constructor() {
-    /*this.projects.push({
-      name: 'SQUADS',
-      year: '2021',
-      content: 'Decentralized application for creation of better, simpler DAOs. Built on Solana Blockchain',
-      languages: [{name: 'TypeScript', css: 'ts'}, {name: 'Rust', css: 'rust'}]
-    });*/
     this.projects.push({
       name: 'Wav Header Parser',
       year: '2020',

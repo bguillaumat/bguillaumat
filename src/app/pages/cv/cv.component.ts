@@ -45,9 +45,9 @@ export class CvComponent implements OnInit {
     this.experience.push({
       company: 'SQUADS',
       time: 'October 2021 - (Now)',
-      job: 'Fullstack/Blockchain Developer',
+      job: 'Lead Fullstack/Blockchain Developer',
       techs: 'Rust / React',
-      site: 'https://sqds.io',
+      site: 'https://squads.so',
       pos: 'r'
     });
     this.experience.push({
