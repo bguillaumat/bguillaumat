@@ -5,4 +5,4 @@ I'm a software engineer/developer being gratuated from EPITECH Paris with a Mast
 I like trying new technologies and enjoy new projets/experiences/challenges.
 
 ### Currently...
-- I'm working as Blockchain/Fullstack Developer at [SQUADS](https://sqds.io)
+- I'm working as Lead Developer at [SQUADS](https://sqds.io)
